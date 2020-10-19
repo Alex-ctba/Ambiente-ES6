@@ -1,0 +1,27 @@
+>> PREPARANDO AMBIENTE PARA DESENVOLVIMENTO NO ES6 << 
+
+/>> INstalação do Node
+
+>> Instalação do Yarn
+
+>> Criando arquivo [package.json] p/  armazenar as dependencias da app
+Yarn init -Y
+
+>> instalando 1ª dependencia Babel
+yarn add @babel/cli
+
+>> Instação da 2ª dependencia Babel
+yearn add @babel/preset-env
+
+>> Configuração do Babel
+/criando arquivo no diretorio principal ".babelrc"
+conteúdo p/ configuração:
+
+{
+    "presets":["@babel/presets-env"]
+}
+
+
+
+
+
