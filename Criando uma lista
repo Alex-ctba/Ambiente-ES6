@@ -7,8 +7,6 @@ class minhalista{
     }
     addList(){
      
-     var n = Number(cont)
-     
         this.list.push("Novo elemento ")
         console.log(`${this.list} `)
   
@@ -20,4 +18,27 @@ const novo = new minhalista()
 document.getElementById('newElement').onclick = function(){
     novo.addList()
     
+}
+
+//*******************  classe por herança ******************************
+
+class todolist{
+    constructor(){
+        this.todo = []
+    }
+
+    add(todo){
+        this.todo.push(todo)
+        console.log(this.todo)
+    }
+}
+
+class mylist extends todolist{
+     
+}
+
+const novo = new mylist()
+
+document.getElementById('newElement').onclick = function(){
+    novo.add('Novo valor')
 }
