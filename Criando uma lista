@@ -42,3 +42,37 @@ const novo = new mylist()
 document.getElementById('newElement').onclick = function(){
     novo.add('Novo valor')
 }
+
+
+//********  ADICIONAR VALORES A HERANÇAS ***************
+class todolist{
+    constructor(){
+        this.todo = []
+    }
+
+    add(todo){
+        this.todo.push(todo)
+        console.log(this.todo)
+    }
+}
+
+class mylist extends todolist{
+     constructor(){
+         super()
+           this.user = "Usuário: alex";
+     }
+
+     mostrauser(){
+         console.log(this.user)
+     }
+  
+
+}
+
+const novo = new mylist()
+
+document.getElementById('newElement').onclick = function(){
+    novo.add('Novo valor')
+}
+
+novo.mostrauser()
