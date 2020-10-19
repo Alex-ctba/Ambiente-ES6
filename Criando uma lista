@@ -1,0 +1,23 @@
+
+
+class minhalista{
+    constructor(){
+        this.list = []
+     
+    }
+    addList(){
+     
+     var n = Number(cont)
+     
+        this.list.push("Novo elemento ")
+        console.log(`${this.list} `)
+  
+    }
+}
+
+const novo = new minhalista()
+
+document.getElementById('newElement').onclick = function(){
+    novo.addList()
+    
+}
