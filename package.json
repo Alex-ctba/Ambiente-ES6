@@ -1,0 +1,11 @@
+{
+  "name": "ambiente-es6",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Alex-ctba/Ambiente-ES6.git",
+  "author": "Alexsandro <Alex_ctba@icloud.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@babel/cli": "^7.12.1"
+  }
+}
